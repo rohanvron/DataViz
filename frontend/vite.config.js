@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
+      base: '/DataViz/',
       '/api': 'http://localhost:5000'
     }
   }
