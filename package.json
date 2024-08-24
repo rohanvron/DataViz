@@ -1,0 +1,13 @@
+{
+    "name": "dataviz",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "cd backend && npm install && node server.js",
+      "build": "cd frontend && npm install && npm run build",
+      "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\""
+    },
+    "dependencies": {
+      "concurrently": "^8.0.1"
+    }
+  }
+  
