@@ -14,7 +14,7 @@ const GeoDistributionChart = ({ isLargeScreen }) => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/data/geographicaldistribution');
+      const response = await axios.get('https://data-viz-three.vercel.app/api/data/geographicaldistribution');
       setData(response.data);
     } catch (error) {
       console.error('Error fetching geographical distribution data:', error);

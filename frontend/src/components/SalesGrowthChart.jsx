@@ -13,7 +13,7 @@ const SalesGrowthChart = ({ isLargeScreen }) => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/data/salesgrowth');
+      const response = await axios.get('https://data-viz-three.vercel.app/api/data/salesgrowth');
       setData(response.data);
     } catch (error) {
       console.error('Error fetching sales growth data:', error);

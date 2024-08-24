@@ -40,7 +40,7 @@ const CustomerLifetimeValueChart = ({ isLargeScreen }) => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/data/customerlifetimevalue?interval=${interval}`
+        `https://data-viz-three.vercel.app/api/data/customerlifetimevalue?interval=${interval}`
       );
       setData(formatData(response.data));
     } catch (error) {

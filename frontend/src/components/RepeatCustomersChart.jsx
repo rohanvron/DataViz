@@ -14,7 +14,7 @@ const RepeatCustomersChart = ({ isLargeScreen }) => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/data/repeatcustomers?interval=${interval}`);
+      const response = await axios.get(`https://data-viz-three.vercel.app/api/data/repeatcustomers?interval=${interval}`);
       setData(response.data);
     } catch (error) {
       console.error('Error fetching repeat customers data:', error);

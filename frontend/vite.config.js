@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       base: '/DataViz/',
-      '/api': 'http://localhost:5000'
+      '/api': 'https://data-viz-three.vercel.app'
     }
   }
 })
